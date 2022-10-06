@@ -124,39 +124,7 @@ tr[abindex].onlyMobile , th[abindex].onlyMobile, td[abindex].onlyMobile  { displ
 .AB-manual{font-size:11px; color:#f29730; display:inline-block; padding-left:15px; padding-top:2px; margin-left:10px; height:15px; background:url("icon_manual.png") left 2px no-repeat;}
 /*스크롤*/
 .AB-scroll-bar{overflow: auto; margin:3px 3px 5px 0; scrollbar-base-color: #fff; scrollbar-3dlight-color: #fff; scrollbar-darkshadow-color: #fff; scrollbar-face-color: #fff; scrollbar-highlight-color: #dddddd; scrollbar-shadow-color: #dddddd; scrollbar-track-color: #fff;}
-/* 애니메이션 */
-.ABC-box-rollover{position:relative;}
-.ABC-box-rollover-front, .ABC-box-rollover-back{transform-style:preserve-3d; -webkit-transition:750ms; -moz-transition:750ms; -o-transition:750ms; -ms-transition:750ms;}
-.ABC-box-rollover-front{-webkit-transform:rotateY(0); -moz-transform:rotateY(0); -ms-transform:rotateY(0); -o-transform:rotateY(0); transform:rotateY(0); backface-visibility:hidden;}
-.ABC-box-rollover:hover .ABC-box-rollover-front{-webkit-transform:rotateY(180deg); -moz-transform:rotateY(180deg); -ms-transform:rotateY(180deg); -o-transform:rotateY(180deg); transform:rotateY(180deg);}
-.abline-div-padding.ABC-box-rollover:hover .ABC-box-rollover-front{-webkit-transform:rotateY(0); -moz-transform:rotateY(0); -ms-transform:rotateY(0); -o-transform:rotateY(0); transform:rotateY(0); backface-visibility:hidden;}
-.ABC-box-rollover-back{-webkit-transform:rotateY(-180deg); -moz-transform:rotateY(-180deg); -ms-transform:rotateY(-180deg); -o-transform:rotateY(-180deg); transform:rotateY(-180deg); backface-visibility:hidden; position:absolute; top:0; width:100%; text-align:center;}
-.abline-div-padding.ABC-box-rollover-back{-webkit-transform:rotateY(0); -moz-transform:rotateY(0); -ms-transform:rotateY(0); -o-transform:rotateY(0); transform:rotateY(0); position:static;}
-.ABC-box-rollover:hover .ABC-box-rollover-back{-webkit-transform:rotateY(0); -moz-transform:rotateY(0); -ms-transform:rotateY(0); -o-transform:rotateY(0); transform:rotateY(0);}
-.abline-div-padding.ABC-box-rollover:hover .ABC-box-rollover-back{-webkit-transform:rotateY(0); -moz-transform:rotateY(0); -ms-transform:rotateY(0); -o-transform:rotateY(0); transform:rotateY(0); position:static;}
-.ABC-img-sliding-left{-webkit-animation: sliding-left 3s 1; -moz-animation: sliding-left 3s 1; -o-animation: sliding-left 3s 1; -ms-animation: sliding-left 3s 1;}
-@-webkit-keyframes sliding-left{from{margin-left:-300%; width:300%;}to{margin-left:0%; width:100%;}}
-@-moz-keyframes sliding-left{from{margin-left:-300%; width:300%;}to{margin-left:0%; width:100%;}}
-@-o-keyframes sliding-left{from{margin-left:-300%; width:300%;}to{margin-left:0%; width:100%;}}
-@-ms-keyframes sliding-left{from{margin-left:-300%; width:300%;}to{margin-left:0%; width:100%;}}
-.ABC-img-sliding-right{-webkit-animation: sliding-right 2s 1; -moz-animation: sliding-right 2s 1; -o-animation: sliding-right 2s 1; -ms-animation: sliding-right 2s 1;}
-@-webkit-keyframes sliding-right{from{margin-left:100%; width:200%;}to{margin-left:0%; width:100%;}}
-@-moz-keyframes sliding-right{from{margin-left:100%; width:200%;}to{margin-left:0%; width:100%;}}
-@-o-keyframes sliding-right{from{margin-left:100%; width:200%;}to{margin-left:0%; width:100%;}}
-@-ms-keyframes sliding-right{from{margin-left:100%; width:200%;}to{margin-left:0%; width:100%;}}
-.ABC-img-sliding-top{-webkit-animation: sliding-top 1s 1; -moz-animation: sliding-top 1s 1; -o-animation: sliding-top 1s 1; -ms-animation: sliding-top 1s 1;}
-@-webkit-keyframes sliding-top{from{margin-top:-15%;}to{margin-top:0%;}}
-@-moz-keyframes sliding-top{from{margin-top:-15%;}to{margin-top:0%;}}
-@-o-keyframes sliding-top{from{margin-top:-15%;}to{margin-top:0%;}}
-@-ms-keyframes sliding-top{from{margin-top:-15%;}to{margin-top:0%;}}
-.ABC-img-sliding-bottom{-webkit-animation: sliding-bottom 1s 1; -moz-animation: sliding-bottom 1s 1; -o-animation: sliding-bottom 1s 1; -ms-animation: sliding-bottom 1s 1;}
-@-webkit-keyframes sliding-bottom{from{margin-top:15%;}to{margin-top:0%;}}
-@-moz-keyframes sliding-bottom{from{margin-top:15%;}to{margin-top:0%;}}
-@-o-keyframes sliding-bottom{from{margin-top:15%;}to{margin-top:0%;}}
-@-ms-keyframes sliding-bottom{from{margin-top:15%;}to{margin-top:0%;}}
-.ABC-img-rollover{position:relative; display:block;}
-.ABC-img-rollover i{position:absolute; top:0; left:0; width:100%; height:100%; opacity:0; background-color:rgba(0,0,0,0.3); -webkit-transition:all 450ms ease; -moz-transition:all 450ms ease; -ms-transition:all 450ms ease; -o-transition:all 450ms ease;}
-.ABC-img-rollover:hover i{opacity:1;}
+
 /* 스크롤 버튼 */
 .-btnTableScroll{text-align:center; display:inline-block; margin-right:5px; *float:left;}
 .-btnTableScroll img{background-color:#fff; border:1px solid #ddd; padding:4px; vertical-align:top; box-sizing:border-box; cursor:pointer;}
@@ -167,7 +135,6 @@ tr[abindex].onlyMobile , th[abindex].onlyMobile, td[abindex].onlyMobile  { displ
 /* 코멘트 형식 */
 .admin-help{display:block; margin:3px 1px 0 1px; font-weight:normal;}
 .admin-help-in{display:inline-block; margin:0 1px 0 5px; vertical-align:middle;}
-.admin-help-q{display:inline-block; vertical-align:middle; height:18px; line-height:20px; padding:0 5px; box-sizing:border-box; border:1px solid #ccc; border-color:#ddd #bbb #bbb #ccc; font-weight:bold; font-family:gulim !important,"Apple SD Gothic Neo",sans-serif; margin-left:2px; border-radius:20px; box-shadow:#fff 0 1px 1px inset; background-color: #f7f7f7;}
 @media screen and (-webkit-min-device-pixel-ratio:0){.admin-help-q{line-height:18px;}}
 [class*="admin-help"], [class*="admin-help"] *, [class*="admin-help"] a{color:#a9a9a9 !important; font-size:12px !important; letter-spacing:-0.5px; line-height:16px;}
 [class*="admin-help"] strong{color:#959595 !important;}
